@@ -1,14 +1,21 @@
 import Image from 'next/image'
+import React from "react";
 import { Inter } from 'next/font/google'
-
+import HeaderSection from '../../component/header-section'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  return (
+  return (<React.Fragment>
+
+  
+    <header className='flex justify-center'>
+      nav
+    </header>
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={` flex justify-between  ${inter.className}`}
     >
-    hi first draft
+    <HeaderSection/>
     </main>
+    </React.Fragment>
   )
 }
