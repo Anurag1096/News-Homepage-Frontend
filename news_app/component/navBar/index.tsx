@@ -37,7 +37,7 @@ const NavBar = () => {
       </div>
       <div
         className={` ease-in-out duration-300 ${
-          showSidebar ? "flex" : "hidden"
+          showSidebar ? " -translate-y-10  transform-gpu" : "hidden"
         }  `}
       >
         <div className="absolute w-full h-full top-0 bg-gray-500[.03]   z-10 sm:hidden"></div>
