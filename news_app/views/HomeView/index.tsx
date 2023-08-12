@@ -5,10 +5,17 @@ import NavBar from "../../component/navBar"
 const inter = Inter({ subsets: ['latin'] })
 
 const HomeView=()=>{
+  const navOptions = [
+    { name: "Home", href: "#" },
+    { name: "New", href: "#" },
+    { name: "Popular", href: "#" },
+    { name: "Trending", href: "#" },
+    { name: "Categories", href: "#" },
+  ];
     return(<>
     <header className='md:flex md:justify-center'>
       <div className=" ">
-      <NavBar/>
+      <NavBar navOptions={navOptions} logoUrl={"/logo.svg"}/>
 
       </div>
     </header>

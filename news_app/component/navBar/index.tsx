@@ -1,15 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-const NavBar = () => {
+interface NavPorps {
+  navOptions:[{
+    name:string,
+    href:string,
+  }];
+  logoUrl:string,
+}
+const NavBar = ({navOptions,logoUrl}:NavPorps) => {
   const [showSidebar, setSideBar] = useState<boolean>(false);
-  const navOptions = [
-    { name: "Home", href: "#" },
-    { name: "New", href: "#" },
-    { name: "Popular", href: "#" },
-    { name: "Trending", href: "#" },
-    { name: "Categories", href: "#" },
-  ];
+  
   const renderNavOptions = navOptions.map((item, index) => {
     return (
       <>
@@ -25,7 +26,7 @@ const NavBar = () => {
 
       <div className="flex justify-between p-2  z-0 sm:hidden">
         <div>
-          <Image src="/logo.svg" alt="logo-image" width="30" height="30" />
+          <Image src={logoUrl} alt="logo-image" width="70" height="70" />
         </div>
         <div
           onClick={() => {
@@ -59,7 +60,7 @@ const NavBar = () => {
       <div className="hidden sm:flex  sm:p-1 sm:space-x-96  sm:align-top ">
         <div>
           <Image
-            src="/logo.svg"
+            src={logoUrl}
             alt="logo-image"
             width="50"
             height="50"
