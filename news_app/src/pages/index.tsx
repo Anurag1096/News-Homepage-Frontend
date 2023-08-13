@@ -11,11 +11,8 @@ export default function Home() {
   {/* <HomeView/> */}
    
 <div className=" text-white">
-
     <HomeView2/>
 </div>
- 
-    
     </React.Fragment>
   )
 }

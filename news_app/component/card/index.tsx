@@ -21,7 +21,7 @@ const CardComp = () => {
         <div className="ml-4">
             <h3 className=" font-extralight text-gray-400 text-xl pb-1">0{item.id}</h3>
             <h5 className="  text-base font-extrabold pb-1">{item.title}</h5>
-            <p className=" text-sm font-thin text-gray-400" >{item.info}</p>
+            <p className=" text-sm font-thin text-gray-500" >{item.info}</p>
         </div>
     </div>
 )
