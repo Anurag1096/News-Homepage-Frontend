@@ -25,7 +25,7 @@ const HomeView2 = () => {
             <h1 className="text-4xl mb-4">accessible anywhere.</h1>
           
           <p className="text-sm text-gray-400">Fylo stroes your most important files in one secure location.</p>
-          <p className="text-sm text-gray-400">Access them wherever you need, share and collaborate with friends and family, and co-workers.</p>
+          <p className="text-sm text-gray-400">Accessthem wherever you need, share and collaborate with friends and family, and co-workers.</p>
           <button className="my-8 bg-blue-300 text-xl py-4 px-4 rounded-2xl border-2 transition-colors transiton  hover:bg-pink-900 hover:text-2xl"> Get Started</button>
         </div>
         
